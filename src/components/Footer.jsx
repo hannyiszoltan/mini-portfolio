@@ -2,9 +2,10 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="bg-slate-700 py-10 text-center text-white">
-      ©2022 copyright <br />
-      Hannyis Zoltán
+    <footer className="bg-slate-700 py-10 text-sm text-center text-white opacity-50">
+      &copy; {new Date().getFullYear()} Hannyis Zoltán.
+      <br />
+      All rights reserved.
     </footer>
   );
 }

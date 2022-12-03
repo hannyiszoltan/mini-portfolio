@@ -13,6 +13,14 @@ import {
 
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
+const IntroOfCharts = () => {
+  return null;
+};
+
+const CustomToolTip = () => {
+  return null;
+};
+
 function SkillChart() {
   const data = [
     {
@@ -39,7 +47,7 @@ function SkillChart() {
 
   return (
     <AnimationOnScroll
-    animateOnce={true}
+      animateOnce={true}
       animateIn="animate__zoomIn animate__faster"
     >
       <section className="flex m-auto md:text-base text-xxs font-semibold items-center justify-center">
@@ -50,7 +58,7 @@ function SkillChart() {
             <Tooltip />
             <Legend />
             <Bar legendType="diamond" dataKey="Stack">
-              <LabelList dataKey="percentage" position="top" />
+              <LabelList dataKey="percentage" position="top" fill="#9d9d9e" />
               <LabelList dataKey="name" fill="#9d9d9e" angle="90" />
             </Bar>
           </BarChart>

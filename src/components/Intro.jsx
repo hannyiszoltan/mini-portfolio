@@ -5,16 +5,16 @@ import 'animate.css';
 function Intro() {
   return (
     <section
-      className="flex animate__animated animate__flipInY items-center justify-center flex-col text-center
+      className="flex items-center justify-center flex-col text-center
      pt-16 pb-10"
     >
-      <h1 className=" text-4xl md:text-7xl md:pb-3  font-semibold">
+      <h1 className="animate__animated animate__bounceInDown dark:text-white text-4xl md:text-7xl md:pb-3  font-semibold">
         Hannyis Zoltán
       </h1>
-      <h2 className="text-lg md:text-xl pb-3 font-medium">
+      <h2 className="animate__animated animate__bounceInRight text-lg md:text-xl pb-3 font-medium">
         Junior Software & Web Developer
       </h2>
-      <div className="text-sm max-w-xl pt-5 px-4 md:pt-7 md:font-bold font-medium ">
+      <div className="animate__animated animate__backInLeft text-sm max-w-xl pt-5 px-4 md:pt-7 md:font-bold font-medium ">
         <p>
           Pályakezdő fejlesztőként jelenlegi tapasztalataim egy része iskolából
           származik, nagyobb része pedig az egyénileg szerzett tapasztalataim a

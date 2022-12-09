@@ -4,6 +4,7 @@ import Intro from "./components/Intro";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import SkillChart from "./components/SkillChart";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 import "animate.css";
 
 function App() {
@@ -75,6 +76,16 @@ function App() {
 
       <div className="overflow-hidden bg-white dark:bg-stone-800 dark:text-stone-300">
         <Intro />
+        <AnimationOnScroll
+          className="fixed z-10 p-2 bottom-5 md:right-20 right-2 dark:text-black bg-slate-200 dark:bg-stone-200 opacity-80 border rounded-xl"
+          animateIn="animate__animated animate__bounceInRight"
+          animateOut="animate__animated animate__bounceOutRight"
+          animateOnce={true}
+        >
+          <a href="#top">
+            <button>^</button>
+          </a>
+        </AnimationOnScroll>
         <Projects />
         <SkillChart />
         <Contact />

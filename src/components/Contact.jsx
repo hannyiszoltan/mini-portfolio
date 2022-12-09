@@ -1,18 +1,23 @@
 import React from "react";
-import LinkedInLogo from "/assets/linkedin.svg";
-import GithubLogo from "/assets/github.svg";
 import "animate.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 function Contact() {
   return (
-    <AnimationOnScroll animateOnce={true} animateIn="animate__bounceIn">
+    <AnimationOnScroll
+      animatePreScroll={false}
+      animateOnce={true}
+      animateIn="animate__bounceIn"
+    >
       <section className="flex animate__animated animate__bounceIn px-7 py-10 md:py-20 justify-center items-center">
         <div className="md:py-6 py-4 pr-6 md:pl-5 pl-2 flex flex-row w-96 gap-y-1 drop-shadow-xl border-4 rounded-xl border-slate-800 dark:border-slate-600">
           <div className="table">
             <ul className="table-cell align-middle pr-2">
               <li>
-                <AnimationOnScroll animateIn="animate__rotateIn">
+                <AnimationOnScroll
+                  animatePreScroll={false}
+                  animateIn="animate__rotateIn"
+                >
                   <a
                     href="https://www.linkedin.com/in/hannyis-zolt%C3%A1n-32817023b/"
                     target="_blank"
@@ -30,7 +35,10 @@ function Contact() {
                 </AnimationOnScroll>
               </li>
               <li>
-                <AnimationOnScroll animateIn="animate__rotateIn">
+                <AnimationOnScroll
+                  animatePreScroll={false}
+                  animateIn="animate__rotateIn"
+                >
                   <a
                     href="https://github.com/hannyiszoltan"
                     target="_blank"
@@ -62,6 +70,7 @@ function Contact() {
 
             <input
               className="pl-2 w-full border hover:border-slate-500 focus:outline-none focus:border-slate-800 focus:border-2 rounded-lg dark:bg-slate-700 dark:placeholder-slate-400 dark:border-slate-800 dark:hover:border-white dark:focus:border-white"
+
               type="text"
               name=""
               placeholder="Name"

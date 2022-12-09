@@ -49,6 +49,7 @@ function SkillChart() {
     <AnimationOnScroll
       animateOnce={true}
       animateIn="animate__zoomIn animate__faster"
+      animatePreScroll={false}
     >
       <section className="flex m-auto md:text-base text-xxs font-semibold items-center justify-center">
         <ResponsiveContainer width="55%" height={300}>

@@ -1,10 +1,10 @@
 import React from "react";
-import 'animate.css';
-
+import "animate.css";
 
 function Intro() {
   return (
     <section
+      id="top"
       className="flex items-center justify-center flex-col text-center
      pt-16 pb-10"
     >
